@@ -1,0 +1,21 @@
+{
+  "name": "project",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "CrazyBBB <myamamtist@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/CrazyBBB/typescript-study",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/js/bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.2.1"
+  }
+}

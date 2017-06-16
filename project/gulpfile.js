@@ -14,6 +14,7 @@ gulp.task('default',[
     'clean:dist',
     'compile:ts',
     'copy:html',
+    'copy:bower',
     'server',
     'watch'
 ]);
@@ -51,4 +52,14 @@ gulp.task('server', function(){
     },
     files: ['dist/*']
   });
+});
+
+gulp.task('copy:bower', function(){
+    // アスタリスク2つを指定しないとファイルがコピーされない
+    // baseの指定はフォルダ構成を再現する起点
+    return gulp.src(
+        ['src/js/bower_components/**'],
+        { base: 'src/js' }
+    )
+    .pipe(gulp.dest('dist/js/'));
 });
