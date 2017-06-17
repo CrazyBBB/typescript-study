@@ -1,4 +1,3 @@
-/// <reference path="../../typings/index.d.ts" />
 var module1;
 (function (module1) {
     var foo = (function () {
@@ -17,5 +16,5 @@ var module1;
 })(module1 || (module1 = {}));
 $(function () {
     var foo = new module1.foo($('div'));
-    foo.color('blue');
+    foo.color('orange');
 });

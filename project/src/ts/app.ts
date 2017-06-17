@@ -1,7 +1,3 @@
-/// <reference path="../../typings/index.d.ts" />
-
-declare var JQuery;
-
 namespace module1 {
     export class foo{
         // JQueryオブジェクトを受け取る
@@ -17,5 +13,5 @@ namespace module1 {
 
 $(function(){
   var foo = new module1.foo($('div'));
-  foo.color('blue');
+  foo.color('orange');
 });
